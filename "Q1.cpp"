@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float power (float b, float e);
+int main()
+{
+float b, e,p=0;
+cout<<"enter base number";
+cin>>b;
+cout<<"enter expontent";
+cin>>e;
+p=power(b,e);
+cout<<"power of b is"<<p;
+return 0;
+}
+float power ( float b, float e)
+{
+if (e==0)
+return 1;
+else 
+return b*pow(b,e-1);
+}
