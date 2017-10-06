@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int naturalnumber(int x,int y);
+int main()
+{
+int x,y;  
+cout<<"enter the numbers between\n";
+cin>>x>>y;
+naturalnumber(x,y);
+return 0;
+}
+int naturalnumber(int x,int y)
+{
+if(y<x)
+return 0;
+cout<<x<<" ";
+naturalnumber(x+1,y);
+}
